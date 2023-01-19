@@ -1,7 +1,6 @@
 @import 'mixins';
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/circular-std');
 
 /* Plugins */
 
@@ -12,7 +11,7 @@
 body, ul, ol {
   margin: 0;
   padding: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto";
 }
 
 ul, ol {
@@ -20,7 +19,7 @@ ul, ol {
 }
 
 button, input {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto";
 }
 
 * {
@@ -32,3 +31,11 @@ h1,h2,h3,h4,h5,h6,p{
   margin: 0;
   padding: 0;
 }
+@import './src/blocks/card/card';
+@import './src/blocks/contact/contact';
+@import './src/blocks/skills/skills';
+@import './src/blocks/awards/awards';
+@import './src/blocks/education/education';
+@import './src/blocks/experience/experience';
+@import './src/blocks/certification/certification';
+@import './src/blocks/links/links';
