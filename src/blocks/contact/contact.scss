@@ -1,3 +1,58 @@
 .contact {
-  
+    display: flex;
+    flex-direction: column;
+    max-width: 180px;
+    margin-bottom: 25px;
+
+    &__header {
+        display: flex;
+        padding: 5px 0;
+        border-top: 1px solid #414042;
+        border-bottom: 1px solid #414042;
+    }
+
+    &__logo {
+        margin-right: 10px;
+        max-height: 15px;
+    }
+
+    &__title {
+        font-family: 'Circular Std';
+        font-weight: 700;
+        font-size: px-to-em(11);
+        line-height: lh-to-pct(14,11);
+        letter-spacing: 0.15em;
+        color: #414042;
+        text-transform: uppercase;
+        margin-top: 1px;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding: 5px 0 5px 10px;
+        border-bottom: 1px solid #414042;
+    }
+
+    &__icon {
+        display: flex;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: 34px;
+            width: 0.5px;
+            height: 13px;
+            background-color: #414042;
+        }
+    }
+
+    &__text {
+        font-size: px-to-em(9);
+        line-height: lh-to-pct(11,9);
+        color: #414042;
+        opacity: 0.8;
+    }
 }
